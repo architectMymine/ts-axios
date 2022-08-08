@@ -13,6 +13,6 @@ module.exports = {
   jsxQuotes: false,
   tabWidth: 2,
   trailingComma: 'none',
-  useTabs: false,
-  endOfLine: 'crlf',
+  useTabs: false
+  // endOfLine: 'crlf',
 }

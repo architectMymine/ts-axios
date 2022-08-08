@@ -1,10 +1,8 @@
-/**
- * It is recommended that this file is only used to expose declarations and the main entrance.
- */
-import DummyClass from './ts-axios'
+import { AxiosRequestConfig } from './types'
+import xhr from './xhr'
 
-// export types
-export * from './declarations'
+function axios(config: AxiosRequestConfig): void {
+  xhr(config)
+}
 
-// export main
-export default DummyClass
+export default axios
