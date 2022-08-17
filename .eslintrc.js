@@ -13,7 +13,9 @@ module.exports = {
       },
       rules: {
         '@typescript-eslint/prefer-ts-expect-error': 'off',
-        '@typescript-eslint/strict-boolean-expressions': 'off'
+        '@typescript-eslint/strict-boolean-expressions': 'off',
+        '@typescript-eslint/no-dynamic-delete': 'off',
+        '@typescript-eslint/promise-function-async': 'off'
       }
     },
     {
