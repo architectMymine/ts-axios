@@ -16,7 +16,7 @@ export function isPlainObject(val: any): val is Object {
 // }
 
 export function extend<T, U>(to: T, from: U): T & U {
-  function copy(instance: Record<string, any>) {
+  function copy(instance: Record<string, any>): void {
     Object.getOwnPropertyNames(instance).forEach(key => {
       Object.assign(to, {
         [key]: instance[key]
