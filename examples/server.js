@@ -36,6 +36,8 @@ registerErrorRouter()
 
 registerExtendRouter()
 
+registerInterceptorRouter()
+
 const port = process.env.PORT || 8092
 module.exports = app.listen(port, () => {
   console.log(`Server listening on http://localhost:${port}, Ctrl+C to stop`)
@@ -135,3 +137,8 @@ function registerExtendRouter() {
     })
   })
 }
+
+function registerInterceptorRouter() {}
+router.get('/interceptor/get', function (req, res) {
+  res.end('hello')
+})
